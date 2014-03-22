@@ -33,5 +33,11 @@ namespace DevTrends.MvcDonutCaching
         /// </value>
         [DataMember(Order = 3)]
         public RouteValueDictionary RouteValues { get; set; }
+
+        /// <summary>
+        /// The ordinal index of action according to it will be invoked.
+        /// </summary>
+        [DataMember(Order = 4)]
+        public int Order { get; set; }
     }
 }
